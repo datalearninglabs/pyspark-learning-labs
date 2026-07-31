@@ -36,6 +36,7 @@ def parseLine(line):
 # __file__ represents the current Python file location
 # parent.parent.parent moves three levels up to reach the project root
 PROJECT_PATH = Path(__file__).absolute().parent.parent.parent
+print(Path(__file__).absolute())
 
 
 # Define the path to the fake friends dataset

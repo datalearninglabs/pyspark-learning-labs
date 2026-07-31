@@ -39,3 +39,37 @@ The output provides a histogram showing how many times each rating value (1 to 5
 - Python
 - Apache Spark
 - PySpark RDD API
+
+# Program 02: Average Friends by Age Analysis
+
+## Python Script
+`02_friends_by_age.py`
+
+## Dataset
+`fakefriends.csv`
+
+## Overview
+
+This program demonstrates how to use **PySpark Key-Value Pair RDDs** to analyze a social network dataset and calculate the **average number of friends for each age**.
+
+The application reads a CSV dataset, extracts the age and number of friends for each individual, aggregates the total number of friends and the total number of people for each age, and computes the average using Spark's distributed RDD transformations.
+
+The output displays the average number of friends for every age present in the dataset.
+
+## Spark Concepts Demonstrated
+
+- Creating a SparkContext
+- Reading data into an RDD
+- Parsing CSV data using `map()`
+- Creating Key-Value Pair RDDs
+- Using `mapValues()` to transform values while preserving keys
+- Aggregating data with `reduceByKey()`
+- Using tuples (composite values) for distributed aggregation
+- Calculating averages from aggregated data
+- Collecting and displaying results using `collect()`
+
+## Technologies Used
+
+- Python
+- Apache Spark
+- PySpark RDD API
